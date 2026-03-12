@@ -1,0 +1,4 @@
+# package requirements to run this application
+pandas~=2.3.3
+joblib~=1.5.3
+scikit-learn~=1.8.0
