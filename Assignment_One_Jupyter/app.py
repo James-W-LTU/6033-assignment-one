@@ -1,3 +1,8 @@
-# loads in the spam detection model
-model = joblib.load('models/spam_model.pkl')
-vectorizer = joblib.load('models/vectorizer.pkl')
+from flask import Flask
+import joblib
+
+app = Flask(__name__)
+
+model = joblib.load('spam_model.pkl')
+vectorizer = joblib.load('vectorizer.pkl')
+
